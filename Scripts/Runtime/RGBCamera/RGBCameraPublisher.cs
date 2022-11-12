@@ -50,6 +50,7 @@ public class RGBCameraPublisher : MonoBehaviour
     this._cameraInfoMsg.height = this._camera.height;
     this._cameraInfoMsg.width = this._camera.width;
     this._cameraInfoMsg.distortion_model = "plumb_bob";
+    this._cameraInfoMsg.D = new double[] { 0, 0, 0, 0, 0 };
 
     double HFOV = Camera.VerticalToHorizontalFieldOfView(
         GetComponent<Camera>().fieldOfView, GetComponent<Camera>().aspect);
